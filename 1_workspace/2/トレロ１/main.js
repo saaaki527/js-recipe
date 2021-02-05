@@ -18,6 +18,7 @@ addButton.onclick = function() {
   
   // todo(text box的な) を card の中に追加する
   card.append(todo)
+  
 
   // 削除ボタンを作成
   const deleteButton = document.createElement("div")

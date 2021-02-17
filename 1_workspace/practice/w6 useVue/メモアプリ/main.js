@@ -8,7 +8,8 @@ new Vue({
     addCard: function() {
       this.list.push(this.text)
       localStorage["list"] = JSON.stringify(this.list)
-      //inputの文字を消す（input.value=""みたいな）はどうやるんだ？
+      //inputの文字を消す（input.value=""みたいな）
+      this.text = ""
     },
   },
 })

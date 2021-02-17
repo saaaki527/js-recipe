@@ -9,9 +9,10 @@
   <body>
     <div id="app">
       <div>問題</div>
-      <button v-on:click="judge1">A</button>
-      <button v-on:click="judge2">B</button>
-      <button v-on:click="judge3">C</button>
+      <button v-on:click="judge(1)">A</button>
+      <button v-on:click="judge(2)">B</button>
+      <button v-on:click="judge(3)">C</button>
+      <!-- さっきまで書いてたのはjudge3()と同じ意味 -->
       <div>{{answer}}</div>
     </div>
   </body>

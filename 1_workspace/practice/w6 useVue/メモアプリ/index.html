@@ -9,6 +9,7 @@
   <body>
     <div id="app">
       <input type="text" v-model="text"></input>
+      <!-- v-bindは入れたい変数と紐づける -->
       <button v-on:click="addCard">add</button>
       <div id="container">
           <div v-for="text in list">{{text}}</div>

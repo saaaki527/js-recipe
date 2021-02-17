@@ -2,6 +2,7 @@ new Vue({
   //Vueのプログラムを読み込んだことで使えるようになった関数。設定をはじめますって感じ
   el: "#app", //idがappの要素のdivの中でのみvue.jsを適用させる。cssのid型セレクタ(#app)といっしょ。
   data() {
+    //data: {}(教材)
     //methodなので()をつける。
     //returnにすることで値を「保持」する
     return {

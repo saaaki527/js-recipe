@@ -70,7 +70,7 @@ const todoDisplay = document.getElementById("display")
 // listに空っぽの配列を作っている
 let list = []
 // localstorageにいれたリストをとりだす
-if(localStorage["list"]) {
+if (localStorage["list"]) {
   list = JSON.parse(localStorage["pastMemo"])
 }
 
@@ -89,13 +89,13 @@ addButton.onclick = function() {
   const todo = document.createElement("div")
   todo.textContent = inputText.value
   todoDisplay.append(todo)
-  
+
   // リストに入力した内容を入れる
-  list.push(inputText.value) 
+  list.push(inputText.value)
 
   console.log(list)
   // ローカルストレージにリストを保存する
-  localStorage["pastMemo"]=JSON.stringify(list)
+  localStorage["pastMemo"] = JSON.stringify(list)
 
   inputText.value = ""
 }

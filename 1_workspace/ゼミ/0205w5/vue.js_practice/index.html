@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div v-for="drink in drinks">{{drink}}</div>
+      <!-- マスタッシュ構文{ 口ひげ } -->
+      <!-- v- のような特殊な属性：ディレクティブ -->
+      <!-- 商品 -->
+      <p>お茶{{drinkPrice}}円</p>
+      <!-- 購入ボタン -->
+      <button v-on:click="purchase">購入</button>
+      <!-- 投入ボタン -->
+      <input v-model="inputMoney" type="number" />
+      <button v-on:click="addTotalMoney">投入</button>
+      <!-- 持ってるお金の表示 -->
+      <div>{{totalMoney}}円</div>
+      <!-- お茶買ったよの表示 -->
+      <div v-if="isPurchased">お茶{{drinkNumber}}本買ったよ</div>
+    </div>
+    <!-- Vue が先、main.js があと！ -->
+    <!-- vueの公式サイトからこれコピペする -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- 上のを書いたとしてもmain.jsの読み込みは省略できない -->
+    <script src="main.js"></script>
+  </body>
+</html>
